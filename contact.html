@@ -30,13 +30,13 @@
        <div class="container">
            <div class="contact-container">
                <h1 class="l-heading">Contact Us</h1>
-               <form>
-                   <input type="text" placeholder="Enter your name..." required>
-                   <input type="email" placeholder="Enter your email..." required>
-                   <input type="text" placeholder="Enter your subject..." required>
-                   <textarea placeholder="type message..." required></textarea>
-                   <input class="btn btn-block" type="submit" value="Submit">
-                   <input class="btn btn-block btn-primary" type="reset" value="Clear">
+               <form name="contact" method="POST" data-netlify="true">
+                   <input type="text" name="name" placeholder="Enter your name..." required>
+                   <input type="email" name="email" placeholder="Enter your email..." required>
+                   <input type="text" name="subject" placeholder="Enter your subject..." required>
+                   <textarea name="message" placeholder="type message..." required></textarea>
+                   <input name="submit" class="btn btn-block" type="submit" value="Submit">
+                   <input name="reset" class="btn btn-block btn-primary" type="reset" value="Clear">
                </form>
            </div>
        </div>
@@ -51,9 +51,9 @@
             <div>
                 <h3>Email Newsletter</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <form>
-                    <input type="email" placeholder="Enter email...">
-                    <input type="submit" value="Subscribe" class="btn btn-primary">
+                <form name="contact" method="POST" data-netlify="true">
+                    <input name="email" type="email" placeholder="Enter email...">
+                    <input name="submit" type="submit" value="Subscribe" class="btn btn-primary">
                 </form>
             </div>
             <div>
